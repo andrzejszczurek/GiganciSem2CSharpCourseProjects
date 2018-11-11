@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("GiganciSem2CSharpCourseProjects")]
+[assembly: AssemblyTitle("1.WstepDoProgramowaniaObiektowego")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("GiganciSem2CSharpCourseProjects")]
+[assembly: AssemblyProduct("1.WstepDoProgramowaniaObiektowego")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3a64e677-4b2f-4a39-a730-23db29a3b05e")]
+[assembly: Guid("316aa71d-bc13-4165-8e03-fdddb9d6f04d")]
 
 // Version information for an assembly consists of the following four values:
 //
