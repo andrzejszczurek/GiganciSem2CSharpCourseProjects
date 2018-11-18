@@ -1,0 +1,17 @@
+﻿1. Tworzymy panel logowania
+2. Dodajemy główny formularz aplikacji
+3. Dodajemy formularz tworzenia nowego wpisu
+4. Implementujemy mechaniz logowania użytkownika
+	a. tworzymy statyczną listę par: login-hasło
+	b. tworzymy metodą i podpinamy pod zdarzenie kliknięcia przycisku
+	c. implementujemy sprawdzanie czy wpisyny login i hasło znajduję się na liście
+		jak nie to wyświetlamy stosowny komunikat
+5. Ustawiamy w klasie Program.cs odpowiedni formularz jako startowy
+6. Dodajemy klasy modelowe aplikacji (LibraryObject, Game)
+7. Implementujemy plikową bazę danych - zapis/odczyt rekordów z pliku
+8. Implementujemy klasę Library - klasa odpowiedzialna za zarządzanie piblioteką
+	a. Dodajemy metodaę AddGame
+	b. Dodajemy metodę RemoveGame
+	c. ImportGames
+	d. SaveGames
+9. cd ...

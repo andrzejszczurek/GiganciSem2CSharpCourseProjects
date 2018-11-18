@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.SzyfrCezara", "3.SzyfrCez
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.PrzegladarkaInternetowa", "4.PrzegladarkaInternetowa\4.PrzegladarkaInternetowa.csproj", "{9F82B36B-C5F7-4489-B8F4-BB3501E524E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.SystemBiblioteka", "5.SystemBiblioteka\5.SystemBiblioteka.csproj", "{C8B3ED93-7D4E-4426-A396-FD33B82479D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9F82B36B-C5F7-4489-B8F4-BB3501E524E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F82B36B-C5F7-4489-B8F4-BB3501E524E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F82B36B-C5F7-4489-B8F4-BB3501E524E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8B3ED93-7D4E-4426-A396-FD33B82479D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B3ED93-7D4E-4426-A396-FD33B82479D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B3ED93-7D4E-4426-A396-FD33B82479D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B3ED93-7D4E-4426-A396-FD33B82479D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
