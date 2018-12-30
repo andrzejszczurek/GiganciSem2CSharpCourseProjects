@@ -15,6 +15,32 @@ namespace _5.SystemBiblioteka
       public LoginForm()
       {
          InitializeComponent();
+         lblValidation.Visible = false;
       }
+
+      private void btnLogin_Click(object sender, EventArgs e)
+      {
+         string login = tbLogin.Text;
+         string password = tbPassword.Text;
+
+         if (!IsValueCorrect(login) && !IsValueCorrect(password))
+         {
+            lblValidation.Visible = true;
+            tbLogin.Text = "";
+            tbPassword.Text = "";
+         }
+         else
+         {
+            MainWindowForm form = new MainWindowForm();
+            form.Show();
+            Hide();
+         }
+      }
+
+      private bool IsValueCorrect(string value)
+      {
+         return !string.IsNullOrEmpty(value) && !string.IsNullOrWhiteSpace(value);
+      }
+
    }
 }

@@ -31,8 +31,8 @@
          this.lblLogin = new System.Windows.Forms.Label();
          this.lblPassword = new System.Windows.Forms.Label();
          this.lblValidation = new System.Windows.Forms.Label();
-         this.textBox1 = new System.Windows.Forms.TextBox();
-         this.textBox2 = new System.Windows.Forms.TextBox();
+         this.tbLogin = new System.Windows.Forms.TextBox();
+         this.tbPassword = new System.Windows.Forms.TextBox();
          this.btnLogin = new System.Windows.Forms.Button();
          this.SuspendLayout();
          // 
@@ -64,19 +64,19 @@
          this.lblValidation.TabIndex = 0;
          this.lblValidation.Text = "Login lub hasło niepoprawne";
          // 
-         // textBox1
+         // tbLogin
          // 
-         this.textBox1.Location = new System.Drawing.Point(92, 30);
-         this.textBox1.Name = "textBox1";
-         this.textBox1.Size = new System.Drawing.Size(100, 20);
-         this.textBox1.TabIndex = 1;
+         this.tbLogin.Location = new System.Drawing.Point(92, 30);
+         this.tbLogin.Name = "tbLogin";
+         this.tbLogin.Size = new System.Drawing.Size(100, 20);
+         this.tbLogin.TabIndex = 1;
          // 
-         // textBox2
+         // tbPassword
          // 
-         this.textBox2.Location = new System.Drawing.Point(92, 67);
-         this.textBox2.Name = "textBox2";
-         this.textBox2.Size = new System.Drawing.Size(100, 20);
-         this.textBox2.TabIndex = 2;
+         this.tbPassword.Location = new System.Drawing.Point(92, 67);
+         this.tbPassword.Name = "tbPassword";
+         this.tbPassword.Size = new System.Drawing.Size(100, 20);
+         this.tbPassword.TabIndex = 2;
          // 
          // btnLogin
          // 
@@ -86,6 +86,7 @@
          this.btnLogin.TabIndex = 3;
          this.btnLogin.Text = "Zaloguj";
          this.btnLogin.UseVisualStyleBackColor = true;
+         this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
          // 
          // LoginForm
          // 
@@ -93,8 +94,8 @@
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.ClientSize = new System.Drawing.Size(253, 179);
          this.Controls.Add(this.btnLogin);
-         this.Controls.Add(this.textBox2);
-         this.Controls.Add(this.textBox1);
+         this.Controls.Add(this.tbPassword);
+         this.Controls.Add(this.tbLogin);
          this.Controls.Add(this.lblValidation);
          this.Controls.Add(this.lblPassword);
          this.Controls.Add(this.lblLogin);
@@ -110,8 +111,8 @@
       private System.Windows.Forms.Label lblLogin;
       private System.Windows.Forms.Label lblPassword;
       private System.Windows.Forms.Label lblValidation;
-      private System.Windows.Forms.TextBox textBox1;
-      private System.Windows.Forms.TextBox textBox2;
+      private System.Windows.Forms.TextBox tbLogin;
+      private System.Windows.Forms.TextBox tbPassword;
       private System.Windows.Forms.Button btnLogin;
    }
 }

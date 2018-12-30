@@ -29,7 +29,7 @@
       private void InitializeComponent()
       {
          this.lblTitle = new System.Windows.Forms.Label();
-         this.lbGames = new System.Windows.Forms.ListBox();
+         this.listGames = new System.Windows.Forms.ListBox();
          this.btnAdd = new System.Windows.Forms.Button();
          this.btnDelete = new System.Windows.Forms.Button();
          this.SuspendLayout();
@@ -43,13 +43,13 @@
          this.lblTitle.TabIndex = 0;
          this.lblTitle.Text = "Biblioteka gier";
          // 
-         // lbGames
+         // listGames
          // 
-         this.lbGames.FormattingEnabled = true;
-         this.lbGames.Location = new System.Drawing.Point(12, 25);
-         this.lbGames.Name = "lbGames";
-         this.lbGames.Size = new System.Drawing.Size(209, 251);
-         this.lbGames.TabIndex = 1;
+         this.listGames.FormattingEnabled = true;
+         this.listGames.Location = new System.Drawing.Point(12, 25);
+         this.listGames.Name = "listGames";
+         this.listGames.Size = new System.Drawing.Size(209, 251);
+         this.listGames.TabIndex = 1;
          // 
          // btnAdd
          // 
@@ -59,6 +59,7 @@
          this.btnAdd.TabIndex = 3;
          this.btnAdd.Text = "Dodaj grę";
          this.btnAdd.UseVisualStyleBackColor = true;
+         this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
          // 
          // btnDelete
          // 
@@ -68,6 +69,7 @@
          this.btnDelete.TabIndex = 4;
          this.btnDelete.Text = "Usuń grę";
          this.btnDelete.UseVisualStyleBackColor = true;
+         this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
          // 
          // MainWindowForm
          // 
@@ -76,7 +78,7 @@
          this.ClientSize = new System.Drawing.Size(233, 410);
          this.Controls.Add(this.btnDelete);
          this.Controls.Add(this.btnAdd);
-         this.Controls.Add(this.lbGames);
+         this.Controls.Add(this.listGames);
          this.Controls.Add(this.lblTitle);
          this.Name = "MainWindowForm";
          this.Text = "Główne okno";
@@ -88,7 +90,7 @@
       #endregion
 
       private System.Windows.Forms.Label lblTitle;
-      private System.Windows.Forms.ListBox lbGames;
+      private System.Windows.Forms.ListBox listGames;
       private System.Windows.Forms.Button btnAdd;
       private System.Windows.Forms.Button btnDelete;
    }

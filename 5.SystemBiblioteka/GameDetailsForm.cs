@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _5.SystemBiblioteka.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,23 @@ namespace _5.SystemBiblioteka
       public GameDetailsForm()
       {
          InitializeComponent();
+      }
+
+      private void btnClear_Click(object sender, EventArgs e)
+      {
+         tbDescription.Text = "";
+         tbPrice.Text = "";
+         tbTitle.Text = "";
+      }
+
+      private void btnSave_Click(object sender, EventArgs e)
+      {
+         string description = tbDescription.Text;
+         string price = tbPrice.Text;
+         string title = tbTitle.Text;
+         Game game = new Game(0, title, description, decimal.Parse(price));
+         game.SaveToFile();
+         MessageBox.Show("Zapisano gre!");
       }
    }
 }
