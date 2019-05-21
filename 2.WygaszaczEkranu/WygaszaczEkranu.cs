@@ -1,23 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace _2.WygaszaczEkranu
 {
    public partial class WygaszaczEkranu : Form
    {
-      int x, y;
-      string[] obrazki;
-      int iloscObrazkow;
-      int numerObrazka;
+      private int x, y; // zmienne na współrzedne kursora myszki
+      private string[] obrazki; // tablica na obrazki
+      private int iloscObrazkow; // ilość załadowanych obrazków
+      private int numerObrazka; // numer aktualnie wyświetlanego obrazka
 
       public WygaszaczEkranu()
       {

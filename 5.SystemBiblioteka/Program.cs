@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using _5.SystemBiblioteka.Forms;
+using System;
 using System.Windows.Forms;
 
 namespace _5.SystemBiblioteka

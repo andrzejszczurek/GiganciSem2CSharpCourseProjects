@@ -45,37 +45,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GameDetailsForm.cs">
+    <Compile Include="Forms\ElementDetailsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GameDetailsForm.Designer.cs">
-      <DependentUpon>GameDetailsForm.cs</DependentUpon>
+    <Compile Include="Forms\ElementDetailsForm.Designer.cs">
+      <DependentUpon>ElementDetailsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Library.cs" />
-    <Compile Include="LoginForm.cs">
+    <Compile Include="Forms\RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="Forms\RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryManager.cs" />
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainWindowForm.cs">
+    <Compile Include="Forms\MainWindowForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainWindowForm.Designer.cs">
+    <Compile Include="Forms\MainWindowForm.Designer.cs">
       <DependentUpon>MainWindowForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Game.cs" />
+    <Compile Include="Model\Element.cs" />
     <Compile Include="Model\LibraryObject.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GameDetailsForm.resx">
-      <DependentUpon>GameDetailsForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\ElementDetailsForm.resx">
+      <DependentUpon>ElementDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
+    <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainWindowForm.resx">
+    <EmbeddedResource Include="Forms\MainWindowForm.resx">
       <DependentUpon>MainWindowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,7 +110,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Biblioteka.txt" />
+    <Content Include="Database\Biblioteka.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database\Users.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="KrokiRealizacji.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
